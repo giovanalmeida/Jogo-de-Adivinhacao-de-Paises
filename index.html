@@ -6,6 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo de Adivinhação de Bandeiras</title>
     <link rel="stylesheet" href="estilo.css">
+    <!-- CDN do Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-900 from-blue-900 via-purple-800 to-pink-700 text-white font-sans antialiased">
+
+    <div class="flex flex-col items-center justify-center min-h-screen py-10 px-6">
+
+        <!-- Título -->
+        <h1 class="text-5xl font-extrabold text-center text-gradient mb-8 leading-tight">
+            Adivinhação de Bandeiras
+        </h1>
+
+        <!-- Imagem da Bandeira -->
+        <img id="flagImage" alt="Bandeira do país" class="w-80 h-48 mb-8 rounded-xl shadow-2xl border-8 border-white opacity-80 transition-opacity duration-300" style="display: none;">
+
+        <!-- Opções de Resposta -->
+        <div id="options" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-2xl mb-10">
+            <!-- As opções serão geradas dinamicamente aqui -->
+        </div>
+
+        <!-- Resultados -->
+        <div id="result" class="text-lg font-semibold text-center text-white mb-6"></div>
+
+        <!-- Timer -->
+        <div id="timer" class="text-2xl font-semibold text-center mb-6">
+            <p>Tempo restante: <span id="timeLeft" class="text-yellow-400">30</span> segundos</p>
+        </div>
+
+        <!-- Botão Próximo -->
+        <button id="nextButton" class="bg-gray-900 from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-3 px-6 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out" style="display: none;">
+            Próximo
+        </button>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação de Bandeiras</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>

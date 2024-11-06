@@ -1,7 +1,4 @@
-#flagImage {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    margin-bottom: 20px;
-
-}
+.btns{
+padding: 10px 20px;
+background-color: rgb(68, 68, 68);
+    }

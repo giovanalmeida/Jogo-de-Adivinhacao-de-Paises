@@ -46,6 +46,7 @@ function displayQuestion() {
     // Cria botões para as opções de países
     options.forEach(option => {
         const button = document.createElement('button');
+        button.classList.add("btns");
         button.innerText = getCountryNameInPortuguese(option);
         button.onclick = () => checkAnswer(option); // Verifica a resposta ao clicar no botão
         optionsDiv.appendChild(button);
